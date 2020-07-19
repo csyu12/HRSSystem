@@ -21,9 +21,17 @@
 
 ### 项目部署（本人是Windows10系统）
 
-1. 访问 https://github.com/csyu12/RS_System 下载本项目源码解压，或者通过PyCharm直接clone
+1. 下载项目
 
-4. 安装项目依赖
+    * 访问 https://github.com/csyu12/RS_System 下载本项目源码解压
+
+    * 通过PyCharm直接下载，如图：
+
+      <img src="./README_img/image-20200719215449282.png" alt="image-20200719215449282" style="zoom:50%;" />
+
+      <img src="./README_img/image-20200719215320304.png" alt="image-20200719215320304" style="zoom:50%;" />
+
+2. 安装项目依赖
 
    ```
    pip install -r requirements.txt
@@ -79,9 +87,9 @@
 
    * 第二种方法：可以运行manage.py文件，修改配置，如下图。后续只需要运行manage.py即可
 
-     <img src="C:\Users\21582\AppData\Roaming\Typora\typora-user-images\image-20200719212535828.png" alt="image-20200719212535828" style="zoom: 50%;" />
+     <img src="./README_img/image-20200719212535828.png" alt="image-20200719212535828" style="zoom: 67%;" />
 
-     <img src="C:\Users\21582\AppData\Roaming\Typora\typora-user-images\image-20200719212620738.png" alt="image-20200719212620738" style="zoom: 33%;" />
+     <img src="./README_img/image-20200719212620738.png" alt="image-20200719212620738" style="zoom: 50%;" />
 
 6. 进入后台
 
