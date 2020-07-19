@@ -1,0 +1,3 @@
+Django==2.2
+Pillow==7.1.2
+mysqlclient==1.4.6  # 若不是使用MySQL数据库请忽略
