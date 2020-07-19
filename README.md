@@ -27,9 +27,9 @@
 
     * 通过PyCharm直接下载，如图：
 
-      <img src="./README_img/image-20200719215449282.png" alt="image-20200719215449282" style="zoom:50%;" />
+      ![Image text](./README_img/1.png)
 
-      <img src="./README_img/image-20200719215320304.png" alt="image-20200719215320304" style="zoom:50%;" />
+      ![Image text](./README_img/2.png)
 
 2. 安装项目依赖
 
@@ -87,9 +87,9 @@
 
    * 第二种方法：可以运行manage.py文件，修改配置，如下图。后续只需要运行manage.py即可
 
-     <img src="./README_img/image-20200719212535828.png" alt="image-20200719212535828" style="zoom: 67%;" />
+     ![Image text](./README_img/3.png)
 
-     <img src="./README_img/image-20200719212620738.png" alt="image-20200719212620738" style="zoom: 50%;" />
+     ![Image text](./README_img/4.png)
 
 6. 进入后台
 
