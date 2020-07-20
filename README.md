@@ -1,6 +1,6 @@
 #  House Lease and Sale Website
 
-> 一个基于Python3.7 + Django 2.2 制作的 “房屋租赁和出售的网站项目“
+> 一个基于Python3.7 + Django 3.0.8 制作的 “房屋租赁和出售的网站项目“
 
 ------
 
@@ -11,7 +11,7 @@
 - MySQL：5.7版
 
 ### 依赖环境
-- Django：2.2
+- Django：3.0.8
 - Python：3.7
 - Pillow：7.1.2
 - mysqlclient：1.4.6
