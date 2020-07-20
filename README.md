@@ -10,7 +10,7 @@
 ### DataBase
 - MySQL：5.7版
 
-### 技术栈
+### 依赖环境
 - Django：2.2
 - Python：3.7
 - Pillow：7.1.2
@@ -23,7 +23,7 @@
 
 1. 下载项目
 
-    * 访问 https://github.com/csyu12/RS_System 下载本项目源码解压
+    * 访问 https://github.com/csyu12/Lease-And-Sale 下载本项目源码解压
 
     * 通过PyCharm直接下载，如图：
 
