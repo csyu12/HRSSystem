@@ -1,6 +1,6 @@
-## House Hental and Sale Website
+#  House Lease and Sale Website
 
-> 一个基于Python3.7 + Django 2.2 制作的 “房屋租赁和出售网站项目“
+> 一个基于Python3.7 + Django 2.2 制作的 “房屋租赁和出售的网站项目“
 
 ------
 
