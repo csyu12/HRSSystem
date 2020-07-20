@@ -1,4 +1,4 @@
-"""RS_system URL Configuration
+"""HLSSystem URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -20,6 +20,6 @@ urlpatterns = [
     path('accounts/', include(('app_accounts.urls', 'app_accounts'), namespace='app_accounts')),
     path('contacts/', include(('app_contacts.urls', 'app_contacts'), namespace='app_contacts')),
     path('listings/', include(('app_listings.urls', 'app_listings'), namespace='app_listings')),
-    path('', include(('app_pages.urls', 'app_pages'), namespace='pages')),
+    path('', include(('app_pages.urls', 'app_pages'), namespace='app_pages')),
     path('admin/', admin.site.urls),
 ]
