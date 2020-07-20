@@ -27,9 +27,9 @@
 
     * 通过PyCharm直接下载，如图：
 
-      ![Image text](./README_img/1.png)
+      ![Image text](README_IMG/1.png)
 
-      ![Image text](./README_img/2.png)
+      ![Image text](README_IMG/2.png)
 
 2. 安装项目依赖
 
@@ -87,9 +87,9 @@
 
    * 第二种方法：可以运行manage.py文件，修改配置，如下图。后续只需要运行manage.py即可
 
-     ![Image text](./README_img/3.png)
+     ![Image text](README_IMG/3.png)
 
-     ![Image text](./README_img/4.png)
+     ![Image text](README_IMG/4.png)
 
 6. 进入后台
 
