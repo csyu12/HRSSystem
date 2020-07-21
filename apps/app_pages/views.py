@@ -1,10 +1,9 @@
 from django.shortcuts import render
-from app_listings.choices import price_choices, bedroom_choices, state_choices
-from app_listings.models import Listing
-from app_realtors.models import Realtor
+from apps.app_listings.choices import price_choices, bedroom_choices, state_choices
+from apps.app_listings.models import Listing
+from apps.app_realtors.models import Realtor
 
 
-# Create your views here.
 def index(request):
     # Get listings from database
     listings = Listing.objects.order_by('-list_date').filter(is_published=True)[:3]

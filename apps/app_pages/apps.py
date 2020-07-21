@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class AppPagesConfig(AppConfig):
-    name = 'app_pages'
+    name = 'apps.app_pages'

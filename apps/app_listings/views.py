@@ -4,7 +4,6 @@ from .choices import price_choices, bedroom_choices, state_choices
 from .models import Listing
 
 
-# Create your views here.
 # 房产信息列表主页 eg: /listings
 def index(request):
     listings = Listing.objects.order_by('-list_date').filter(is_published=True)
