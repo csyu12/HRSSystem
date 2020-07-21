@@ -19,25 +19,22 @@
 
 ------
 
-### 项目部署（本人是Windows10系统）
+### 项目部署（Windows系统）
 
 1. 下载项目
 
     * 访问 https://github.com/csyu12/Lease-And-Sale 下载本项目源码解压
 
-    * 通过PyCharm直接下载，如图：
-
-      ![Image text](README_IMG/1.png)
-
-      ![Image text](README_IMG/2.png)
+    * 通过配置PyCharm环境直接Git
 
 2. 安装项目依赖
 
    ```
    pip install -r requirements.txt
    ```
+   建议创建虚拟环境，在虚拟环境下安装本项目依赖，以免污染本地包
 
-3. 创建数据库
+3. 创建MySQL数据库（根据实际使用的数据库进行配置，不必照本宣科）
 
     MySQL数据库中执行：
 
@@ -45,7 +42,7 @@
     CREATE DATABASE `HRS` CHARSET UTF8;
     ```
 
-    修改`RS_system/setting.py` 修改数据库配置，如下所示：
+    在`RS_system/setting.py` 修改数据库配置，如下所示：
 
     ```python
     DATABASES = {
@@ -83,7 +80,7 @@
    python3 manage.py runserver
    ```
 
-   `在浏览器打开 http://127.0.0.1:8000/ 即可访问主页`
+   在浏览器打开 `http://127.0.0.1:8000/` 即可访问项目主页
 
    * 第二种方法：可以运行manage.py文件，修改配置，如下图。后续只需要运行manage.py即可
 
@@ -95,3 +92,4 @@
 
    - 在浏览器输入127.0.0.1:8000/admin
    - 使用第5步创建的后台管理员账户进行登录
+   - 建议使用后台添加测试数据，比较方便
