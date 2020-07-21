@@ -1,4 +1,4 @@
-"""HLSWebsite URL Configuration
+"""ELSWebsite URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -15,11 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
-    path('accounts/', include(('app_accounts.urls', 'app_accounts'), namespace='app_accounts')),
-    path('contacts/', include(('app_contacts.urls', 'app_contacts'), namespace='app_contacts')),
-    path('listings/', include(('app_listings.urls', 'app_listings'), namespace='app_listings')),
-    path('', include(('app_pages.urls', 'app_pages'), namespace='app_pages')),
+    path('accounts/', include(('apps.app_accounts.urls', 'app_accounts'), namespace='app_accounts')),
+    path('contacts/', include(('apps.app_contacts.urls', 'app_contacts'), namespace='app_contacts')),
+    path('listings/', include(('apps.app_listings.urls', 'app_listings'), namespace='app_listings')),
+    path('', include(('apps.app_pages.urls', 'app_pages'), namespace='app_pages')),
     path('admin/', admin.site.urls),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
