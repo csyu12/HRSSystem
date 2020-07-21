@@ -1,6 +1,6 @@
-#  House Lease and Sale Website
+#  Estate Lease and Sale Website
 
-> 一个基于Python3.7 + Django 3.0.8 制作的 “房屋租赁和出售的网站项目“
+> 一个基于Python3.7 + Django 3.0.8 制作的 “房产托管平台“
 
 ------
 
