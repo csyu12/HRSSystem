@@ -86,7 +86,7 @@
 
      ![Image text](README_IMG/3.png)
 
-     ![Image text](README_IMG/4.png)
+     ![Image text](README_IMG/manage.jpg)
 
 6. 进入后台
 
