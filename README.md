@@ -39,10 +39,10 @@
     MySQL数据库中执行：
 
     ```mysql
-    CREATE DATABASE `HRS` CHARSET UTF8;
+    CREATE DATABASE `HLS` CHARSET UTF8;
     ```
 
-    在`RS_system/setting.py` 修改数据库配置，如下所示：
+    在`HLSWebsit/setting.py` 修改数据库配置，如下所示：
 
     ```python
     DATABASES = {
@@ -50,7 +50,7 @@
             'ENGINE': 'django.db.backends.mysql',
             'HOST': 'localhost',
             'PORT': '3306',
-            'NAME': 'HRS',
+            'NAME': 'HLS',
             'USER': 'root',
             'PASSWORD': '123456',
         }
