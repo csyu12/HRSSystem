@@ -5,8 +5,8 @@ import datetime, os
 
 def save_img(instance, img_name):
     date_str = datetime.datetime.now().strftime('%Y-%m-%d')
-    date_path = 'img/homes/' + date_str + '/'
-    return os.path.join('static', date_path, img_name)
+    date_path = 'estate/' + date_str + '/'
+    return os.path.join('img', date_path, img_name)
 
 
 # 房屋列表
@@ -35,7 +35,7 @@ class Listing(models.Model):
     list_date = models.DateTimeField(default=datetime.datetime.now(), blank=True, verbose_name='创建日期')
 
     class Meta:
-        verbose_name = verbose_name_plural = '房屋资料'
+        verbose_name = verbose_name_plural = '房产资料'
 
     def __str__(self):
         return self.title
