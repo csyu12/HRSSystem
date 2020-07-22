@@ -2,17 +2,16 @@
 
 {% load static %}
 
-{% block title %} | About Us{% endblock %}
+{% block title %} | 关于我们{% endblock %}
 
 {% block content %}
 <section id="showcase-inner" class="py-5 text-white">
     <div class="container">
         <div class="row text-center">
             <div class="col-md-12">
-                <h1 class="display-4">About BT Real Estate</h1>
+                <h1 class="display-4">XX 物业托管平台</h1>
                 <p class="lead">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt,
-                    pariatur!
+                    不管是需要找到优质的房源，还是需要托管房产进行售卖，相信我们平台是您最好的选择！
                 </p>
             </div>
         </div>
@@ -25,9 +24,9 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                    <a href="{% url 'pages:index' %}"> <i class="fas fa-home"></i> Home</a>
+                    <a href="{% url 'pages:index' %}"> <i class="fas fa-home"></i> 首页</a>
                 </li>
-                <li class="breadcrumb-item active">About</li>
+                <li class="breadcrumb-item active">关于我们</li>
             </ol>
         </nav>
     </div>
@@ -37,18 +36,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <h2>We Search For The Perfect Home</h2>
+                <h2>我们提供最优质的房源</h2>
                 <p class="lead">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt,
-                    pariatur!
+                    如果看到喜欢的房子，不妨联系我们平台的房产经纪人进行了解
                 </p>
                 <img src="{% static 'img/about.jpg' %}" alt=""/>
                 <p class="mt-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-                    esse officia repudiandae ad saepe ex, amet neque quod accusamus rem
-                    quia magnam magni dolorum facilis ullam minima perferendis?
-                    Exercitationem at quaerat commodi id libero eveniet harum perferendis
-                    laborum molestias quia.
+                    （相关服务介绍）XXXXXXXXXXXXXXXXXXXXXX
                 </p>
             </div>
             <div class="col-md-4">
@@ -61,7 +55,7 @@
                             alt="Seller of the month"
                     />
                     <div class="card-body">
-                        <h5 class="card-title">Seller Of The Month</h5>
+                        <h5 class="card-title">本月最佳经纪人</h5>
                         <h6 class="text-secondary">{{ realtor.name }}</h6>
                         <p class="card-text">
                             {{ realtor.description }}
@@ -77,21 +71,18 @@
 
 <!-- Work -->
 <section id="work" class="bg-dark text-white text-center">
-    <h2 class="display-4">We Work For You</h2>
+    <h2 class="display-4">我们为您服务</h2>
     <h4>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit
-        aperiam, unde aliquid at similique!
+        关于平台的相关服务问题，可以拨打我们的客服热线：(1234)-1234-5678
     </h4>
     <hr/>
-    <a href="listings.html" class="btn btn-secondary text-white btn-lg"
-    >View Our Featured Listings</a
-    >
+    <a href="{% url 'listings:listings' %}" class="btn btn-secondary text-white btn-lg" >查看我们的精选房源</a>
 </section>
 
 <!-- Team -->
 <section id="team" class="py-5">
     <div class="container">
-        <h2 class="text-center">Our Team</h2>
+        <h2 class="text-center">经纪人团队</h2>
         <div class="row text-center">
             {% if realtors %}
             {% for realtor in realtors %}
@@ -103,7 +94,7 @@
                 />
                 <h4>{{ realtor.name }}</h4>
                 <p class="text-success">
-                    <i class="fas fa-award text-success mb-3"></i> Realtor
+                    <i class="fas fa-award text-success mb-3"></i> 经纪人
                 </p>
                 <hr/>
                 <p><i class="fas fa-phone"></i> {{ realtor.phone }}</p>
@@ -112,7 +103,7 @@
             {% endfor %}
             {% else %}
             <div class="col-md-12">
-                <p>No Realtors Available</p>
+                <p>经纪人列表为空</p>
             </div>
             {% endif %}
 

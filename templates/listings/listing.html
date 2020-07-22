@@ -24,10 +24,10 @@
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                    <a href="{% url 'pages:index' %}">Home</a>
+                    <a href="{% url 'pages:index' %}">首页</a>
                 </li>
                 <li class="breadcrumb-item">
-                    <a href="{% url 'listings:listings' %}">Listings</a>
+                    <a href="{% url 'listings:listings' %}">精选房源</a>
                 </li>
                 <li class="breadcrumb-item active">{{ listing.title }}</li>
             </ol>
@@ -41,7 +41,7 @@
 <!-- Listing -->
 <section id="listing" class="py-4">
     <div class="container">
-        <a href="{% url 'listings:listings' %}" class="btn btn-light mb-4">Back To Listings</a>
+        <a href="{% url 'listings:listings' %}" class="btn btn-light mb-4">返回房产清单</a>
         <div class="row">
             <div class="col-md-9">
                 <!-- Home Main Image -->
@@ -142,19 +142,19 @@
                     <div class="col-md-6">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item text-secondary">
-                                <i class="fas fa-money-bill-alt"></i> Asking Price:
+                                <i class="fas fa-money-bill-alt"></i> 询问价格:
                                 <span class="float-right">${{ listing.price | intcomma }}</span>
                             </li>
                             <li class="list-group-item text-secondary">
-                                <i class="fas fa-bed"></i> Bedrooms:
+                                <i class="fas fa-bed"></i> 卧室数量:
                                 <span class="float-right">{{ listing.bedrooms }}</span>
                             </li>
                             <li class="list-group-item text-secondary">
-                                <i class="fas fa-bath"></i> Bathrooms:
+                                <i class="fas fa-bath"></i> 浴室数量:
                                 <span class="float-right">{{ listing.bathrooms }}</span>
                             </li>
                             <li class="list-group-item text-secondary">
-                                <i class="fas fa-car"></i> Garage:
+                                <i class="fas fa-car"></i> 车库数量:
                                 <span class="float-right">{{ listing.garage }} </span>
                             </li>
                         </ul>
@@ -162,19 +162,19 @@
                     <div class="col-md-6">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item text-secondary">
-                                <i class="fas fa-th-large"></i> Square Feet:
+                                <i class="fas fa-th-large"></i> 平方英尺:
                                 <span class="float-right">{{ listing.sqft }}</span>
                             </li>
                             <li class="list-group-item text-secondary">
-                                <i class="fas fa-square"></i> Lot Size:
+                                <i class="fas fa-square"></i> 占地面积:
                                 <span class="float-right">{{ listing.lot_size }} Acres </span>
                             </li>
                             <li class="list-group-item text-secondary">
-                                <i class="fas fa-calendar"></i> Listing Date:
+                                <i class="fas fa-calendar"></i> 上架日期:
                                 <span class="float-right">{{ listing.list_date }}</span>
                             </li>
                             <li class="list-group-item text-secondary">
-                                <i class="fas fa-bed"></i> Realtor:
+                                <i class="fas fa-bed"></i> 经纪人:
                                 <span class="float-right">{{ listing.realtor }} </span>
                             </li>
                         </ul>
@@ -196,7 +196,7 @@
                             alt=""
                     />
                     <div class="card-body">
-                        <h5 class="card-title">Property Realtor</h5>
+                        <h5 class="card-title">此物业经纪人</h5>
                         <h6 class="text-secondary">{{ listing.realtor }}</h6>
                     </div>
                 </div>
@@ -205,7 +205,7 @@
                         data-toggle="modal"
                         data-target="#inquiryModal"
                 >
-                    邮件问询
+                    邮件联系
                 </button>
             </div>
         </div>
@@ -217,7 +217,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="inquiryModalLabel">邮件问询</h5>
+                <h5 class="modal-title" id="inquiryModalLabel">邮件联系</h5>
                 <button type="button" class="close" data-dismiss="modal">
                     <span>&times;</span>
                 </button>

@@ -9,10 +9,9 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-md-12">
-                <h1 class="display-4">Browse Our Properties {{ name }}</h1>
+                <h1 class="display-4">房产清单 {{ name }}</h1>
                 <p class="lead">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt,
-                    pariatur!
+                    欢迎来到XXX平台，请挑选您的物业
                 </p>
             </div>
         </div>
@@ -26,10 +25,10 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
                     <a href="{% url 'pages:index' %}">
-                        <i class="fas fa-home"></i> Home</a
+                        <i class="fas fa-home"></i> 首页</a
                     >
                 </li>
-                <li class="breadcrumb-item active">Browse Listings</li>
+                <li class="breadcrumb-item active">精选房源</li>
             </ol>
         </nav>
     </div>
@@ -61,15 +60,15 @@
                         <hr/>
                         <div class="row py-2 text-secondary">
                             <div class="col-6">
-                                <i class="fas fa-th-large"></i> Sqft: {{ listing.sqft }}
+                                <i class="fas fa-th-large"></i> 平方尺: {{ listing.sqft }}
                             </div>
-                            <div class="col-6"><i class="fas fa-car"></i> Garage: {{ listing.garage }}</div>
+                            <div class="col-6"><i class="fas fa-car"></i> 车库数量: {{ listing.garage }}</div>
                         </div>
                         <div class="row py-2 text-secondary">
-                            <div class="col-6"><i class="fas fa-bed"></i> Bedrooms: {{ listing.bedrooms }}
+                            <div class="col-6"><i class="fas fa-bed"></i> 卧室数量: {{ listing.bedrooms }}
                             </div>
                             <div class="col-6"><i class="fas fa-bath"></i>
-                                Bathrooms: {{ listing.bathrooms }}
+                                浴室数量: {{ listing.bathrooms }}
                             </div>
                         </div>
                         <hr/>
@@ -83,14 +82,14 @@
                         </div>
                         <hr/>
                         <a href="{% url 'listings:listing' listing.id %}" class="btn btn-primary btn-block"
-                        >More Info</a >
+                        >详情</a >
                     </div>
                 </div>
             </div>
             {% endfor %}
             {% else %}
             <div class="col-md-12">
-                <p>No Listings Available</p>
+                <p>无房源信息</p>
             </div>
             {% endif %}
         </div>

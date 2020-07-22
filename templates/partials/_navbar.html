@@ -22,7 +22,7 @@
                             class="nav-item mr-3"
                         {% endif %}
                 >
-                    <a class="nav-link" href="{% url 'pages:index' %}">Home</a>
+                    <a class="nav-link" href="{% url 'pages:index' %}">首页</a>
                 </li>
                 <li
                         {% if 'about' in request.path %}
@@ -31,7 +31,7 @@
                             class="nav-item mr-3"
                         {% endif %}
                 >
-                    <a class="nav-link" href="{% url 'pages:about' %}">About</a>
+                    <a class="nav-link" href="{% url 'pages:about' %}">关于我们</a>
                 </li>
                 <li
                         {% if 'listings' in request.path %}
@@ -40,7 +40,7 @@
                             class="nav-item mr-3"
                         {% endif %}
                 >
-                    <a class="nav-link" href="{% url 'listings:listings' %}">Featured Listings</a>
+                    <a class="nav-link" href="{% url 'listings:listings' %}">精选房源</a>
                 </li>
             </ul>
 
@@ -54,12 +54,11 @@
                             {% endif %}
                     >
                         <a class="nav-link" href="{% url 'accounts:dashboard' %}">
-                            Welcome {{ user.username }} (Dashboard)</a
-                        >
+                            欢迎 {{ user.username }} (个人查询清单)</a>
                     </li>
                     <li class="nav-item mr-3">
                         <a href="javascript:{document.getElementById('logout').submit()}" class="nav-link">
-                            <i class="fas fa-sign-out-alt"></i> Logout
+                            <i class="fas fa-sign-out-alt"></i> 退出登录
                         </a>
                         <form action="{% url 'accounts:logout' %}" method="POST" id="logout">
                             {% csrf_token %}
@@ -75,7 +74,7 @@
                             {% endif %}
                     >
                         <a class="nav-link" href="{% url 'accounts:register' %}">
-                            <i class="fas fa-user-plus"></i> Register</a
+                            <i class="fas fa-user-plus"></i> 注册</a
                         >
                     </li>
                     <li
@@ -87,7 +86,7 @@
                     >
                         <a class="nav-link" href="{% url 'accounts:login' %}">
                             <i class="fas fa-sign-in-alt"></i>
-                            Login</a>
+                            登录</a>
                     </li>
                 {% endif %}
             </ul>
