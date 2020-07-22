@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from apps.app_listings.choices import price_choices, bedroom_choices, state_choices
-from apps.app_listings.models import Listing
-from apps.app_realtors.models import Realtor
+from apps.listings.choices import price_choices, bedroom_choices, state_choices
+from apps.listings.models import Listing
+from apps.realtors.models import Realtor
 
 
 def index(request):

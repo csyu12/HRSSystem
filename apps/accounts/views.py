@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages, auth
 from django.contrib.auth.models import User
-from apps.app_contacts.models import Contact
+from apps.contacts.models import Contact
 
 
 # 用户注册

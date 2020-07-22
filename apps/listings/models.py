@@ -1,5 +1,5 @@
 from django.db import models
-from apps.app_realtors.models import Realtor
+from apps.realtors.models import Realtor
 import datetime, os
 
 
