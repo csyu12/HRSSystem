@@ -38,11 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.app_accounts.apps.AppAccountsConfig',
-    'apps.app_contacts.apps.AppContactsConfig',
-    'apps.app_pages.apps.AppPagesConfig',
-    'apps.app_listings.apps.AppListingsConfig',
-    'apps.app_realtors.apps.AppRealtorsConfig',
+    'apps.accounts.apps.AppAccountsConfig',
+    'apps.contacts.apps.AppContactsConfig',
+    'apps.pages.apps.AppPagesConfig',
+    'apps.listings.apps.AppListingsConfig',
+    'apps.realtors.apps.AppRealtorsConfig',
     'django.contrib.humanize',
 ]
 

@@ -19,10 +19,10 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('accounts/', include(('apps.app_accounts.urls', 'app_accounts'), namespace='app_accounts')),
-    path('contacts/', include(('apps.app_contacts.urls', 'app_contacts'), namespace='app_contacts')),
-    path('listings/', include(('apps.app_listings.urls', 'app_listings'), namespace='app_listings')),
-    path('', include(('apps.app_pages.urls', 'app_pages'), namespace='app_pages')),
+    path('accounts/', include(('apps.accounts.urls', 'accounts'), namespace='accounts')),
+    path('contacts/', include(('apps.contacts.urls', 'contacts'), namespace='contacts')),
+    path('listings/', include(('apps.listings.urls', 'listings'), namespace='listings')),
+    path('', include(('apps.pages.urls', 'pages'), namespace='pages')),
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
