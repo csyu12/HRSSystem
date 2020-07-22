@@ -3,7 +3,6 @@ from .models import Realtor
 from django.utils.html import format_html
 
 
-# Register your models here.
 @admin.register(Realtor)
 class RealtorAdmin(admin.ModelAdmin):
     # 设置列表显示的属性
@@ -27,11 +26,11 @@ class RealtorAdmin(admin.ModelAdmin):
     # 按时间分层
     date_hierarchy = 'hire_date'
 
-    actions_on_bottom = True  # 底部显示删除动作选项
-    actions_on_top = False  # 删除头部动作选项
+    # actions_on_bottom = True  # 底部显示删除动作选项
+    # actions_on_top = False  # 删除头部动作选项
 
     def show_img(self, realtor):
-        html = '<img style="width:73px;height:50px;" src="/%s">'\
+        html = '<img style="width:63px;height:50px;" src="/media/%s">'\
                % realtor.photo.__str__()
         return format_html(html)
     show_img.short_description = '照片'

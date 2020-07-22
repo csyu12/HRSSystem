@@ -4,8 +4,8 @@ import datetime, os
 
 def save_img(instance, img_name):
     date_str = datetime.datetime.now().strftime('%Y-%m-%d')
-    date_path = 'img/realtors/' + date_str + '/'
-    return os.path.join('static', date_path, img_name)
+    date_path = 'realtors/' + date_str + '/'
+    return os.path.join('img', date_path, img_name)
 
 
 # 房地产经纪人
@@ -19,7 +19,7 @@ class Realtor(models.Model):
     hire_date = models.DateTimeField(default=datetime.datetime.now(), blank=True, verbose_name='雇佣日期')
 
     class Meta:
-        verbose_name = verbose_name_plural = '房地产经纪人'
+        verbose_name = verbose_name_plural = '经纪人清单'
 
     def __str__(self):
         return self.name
