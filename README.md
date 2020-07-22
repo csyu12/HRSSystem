@@ -1,6 +1,6 @@
-#  Estate Lease and Sale Website
+#  Property Lease and Sale Website
 
-> 一个基于Python3.7 + Django 3.0.8 制作的 “房产托管平台“
+> 一个基于Python3.7 + Django 3.0.8 制作的 “物业托管平台“
 
 ------
 
@@ -50,7 +50,7 @@
             'ENGINE': 'django.db.backends.mysql',
             'HOST': 'localhost',
             'PORT': '3306',
-            'NAME': 'HLS',
+            'NAME': 'PLS',
             'USER': 'root',
             'PASSWORD': '123456',
         }
