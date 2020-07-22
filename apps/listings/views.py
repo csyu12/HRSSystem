@@ -21,8 +21,8 @@ def index(request):
 
 # 房子详情页 eg: /listings/1
 def listing(request, listing_id):
-    # 使用get_object_or_404是因为可能用户直接搜索/listings/1000，然而没有这项的房地产信息
-    # 直接返回404即可
+    # 用户直接输入不存在的房产ID，例如直接输入http://127.0.0.1/listings/1000
+    # 使用Django内置方法get_object_or_404直接返回404即可
     listing_mes = get_object_or_404(Listing, pk=listing_id)
 
     context = {
@@ -36,37 +36,35 @@ def listing(request, listing_id):
 def search(request):
     queryset_list = Listing.objects.order_by('-list_date')
 
-    # Keywords
+    # 从房产描述中搜索关键字
     if 'keywords' in request.GET:
         keywords = request.GET['keywords']
         if keywords:
             queryset_list = queryset_list.filter(description__icontains=keywords)
 
-    # City
+    # 搜索城市
     if 'city' in request.GET:
         city = request.GET['city']
         if city:
             queryset_list = queryset_list.filter(city__iexact=city)
 
-    # State
+    # 搜索所在州
     if 'state' in request.GET:
         state = request.GET['state']
         if state:
             queryset_list = queryset_list.filter(state__iexact=state)
 
-    # Bedrooms
-    # lte = less than or equal to
+    # 搜索睡房数量
     if 'bedrooms' in request.GET:
         bedrooms = request.GET['bedrooms']
         if bedrooms:
-            queryset_list = queryset_list.filter(bedrooms__lte=bedrooms)
+            queryset_list = queryset_list.filter(bedrooms__lte=bedrooms)    # lte（小于或等于）
 
-    # Price
-    # lte = less than or equal to
+    # 搜索房产价格
     if 'price' in request.GET:
         price = request.GET['price']
         if price:
-            queryset_list = queryset_list.filter(price__lte=price)
+            queryset_list = queryset_list.filter(price__lte=price)    # lte（小于或等于）
 
     context = {
         'state_choices': state_choices,
